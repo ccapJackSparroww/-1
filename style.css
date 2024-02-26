@@ -1,0 +1,166 @@
+
+body {
+ background-color: #cbcbcb !important;
+}
+
+.calc {
+  width: 350px;
+  border: 1px solid;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 5px 20px;
+  background: #d9d9d9;
+  border-radius: 10px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+
+.results {
+  width: 92.3%;
+  margin: 20px auto;
+  font-family: 'Audiowide', cursive;
+  text-align: right;
+}
+#expression, #result {
+  background: #607D8B;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-right: 5px;
+}
+#result {
+  height: 50px;
+  font-size: 2em;
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#expression {
+  height: 20px;
+  border-top: none;
+  color: #263238;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  overflow: hidden;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.operations, .clears {
+  display: flex;
+  flex-direction: column;
+}
+.operations * {
+  font-size: 1.5em;
+}
+
+.clears * {
+  background: #EF5350;
+  color: white;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  outline: none;
+  font-family: 'Audiowide', cursive;
+  -webkit-box-shadow: 0px 3px 0px 0px #212121;
+  -moz-box-shadow: 0px 3px 0px 0px #212121;
+  box-shadow: 0px 3px 0px 0px #212121;
+}
+button:active {
+  transform: translateY(2px);
+}
+
+.no-calc button {
+  width: 100%; /* Ширина кнопки рівна ширині контейнера */
+  padding: 10px; /* Внутрішні відступи для кнопки */
+  margin-top: 200px; /* Додатковий відступ зверху від рамки */
+}
+
+.container {
+  border: 2px solid #ccc;
+  padding: 20px;
+  max-width: 400px; /* Ширина контейнера */
+  margin: 0 auto; /* Центрування контейнера */
+}
+
+.number, .operation, .equals {
+  background: #263238;
+  color: rgb(139, 138, 63);
+}
+
+.hover-logo span.hover-card{
+  display: none;
+}
+
+.hover-logo:hover span.hover-card{
+  display: flex;
+}
+
+hover-logo{
+  position: relative;
+}
+
+.hover-card {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-card .large-image {
+  display: block;
+  width: 100%;
+}
+
+
+.author-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #fff;
+  font-size: 90%; 
+  padding: 10px; 
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+}
+
+.author-info div {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.author-info div:first-child {
+  font-size: 110%;
+}
+
+
+.hide {
+  display: none;
+}
+
+.onHover:hover + .hide {
+  display: block;
+  color: red;
+}
+
+
+
+
+
+
